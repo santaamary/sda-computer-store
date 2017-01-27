@@ -1,33 +1,32 @@
-
 /**
- * Write a description of class Display here.
+ * Write a description of class HardDisk here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (maryam kiashemshaki) 
+ * @version (17.1.27)
  */
 public class Display
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
+    private int cost;
+    private int size;
+    private String brand;
+     /**  
      * Constructor for objects of class Display
      */
-    public Display()
+    public Display(int newcost, int newsize, String newbrand )
     {
-        // initialise instance variables
-        x = 0;
+        brand = newbrand;
     }
+    public int setCost() {
+		return cost;
+    }
+    public int setSize() {
+		return size;
+    }
+    public String getBrand() {
+		return brand;
+	}
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void DisplaySpecification() {
+    System.out.println("Display Specification is : brand "+ brand + ", size " + size+ ",Cost "+cost);
     }
 }

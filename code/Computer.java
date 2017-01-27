@@ -1,9 +1,8 @@
-
 /**
- * Write a description of class Computer here.
+ * Write a description of class HardDisk here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (maryam kiashemshaki) 
+ * @version (17.1.27)
  */
 public class Computer
 {
@@ -34,4 +33,4 @@ public class Computer
     // your code here
     }
     }
-}
+
