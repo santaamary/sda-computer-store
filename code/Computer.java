@@ -7,27 +7,31 @@
  */
 public class Computer
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private Processor theProcessor;
+    private HardDisk theHardDisk;
+    private Display theDisplay;
 
     /**
-     * Constructor for objects of class Computer
-     */
+     * constructor for Computer
+     * takes no parameters
+     * it call the constructor of each of the fields
+   */
     public Computer()
     {
-        // initialise instance variables
-        x = 0;
+        /* constructor for Computer
+        * takes no parameters
+        * it call the constructor of each of the fields
+        */
+        {
+            // your code
+        }   
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    /* print a summary of the Computer components and calculate a total cost
+     * you will need method calls to get info about the other components
+    * e.g. theProcessor.getCost()
+    */
+    public void printComputerSummary() {
+    // your code here
+    }
     }
 }
