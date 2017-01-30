@@ -1,5 +1,5 @@
 /**
- * Write a description of class HardDisk here.
+ * HardDisk class explain the cost, size and brand.
  * 
  * @author (maryam kiashemshaki) 
  * @version (17.1.27)
@@ -12,21 +12,37 @@ public class HardDisk
        /**
      * Constructor for objects of class HardDisk
      */
-    public HardDisk(int newcost, int newsize, String newbrand )
+    public HardDisk()
     {
-        brand = newbrand;
+        size = 0;
+        cost = 0;
+        brand = null;
     }
-    public int setCost() {
-		return cost;
+    public int setCost(int cost) 
+    {
+		this.cost = cost;
+        return cost;
     }
-    public int setSize() {
-		return size;
+    public int setSize(int size) 
+    {
+		this.size = size;
+        return size;
     }
-    public String getBrand() {
+    public String setbrand(String brand) 
+    {
+		this.brand = brand;
+        return brand;
+    }
+    public String getBrand() 
+    {
 		return brand;
 	}
-
-    public void HardDiskSpecification() {
-    System.out.println("Hard Disk Specification is : brand "+ brand + ", size " + size+ ",Cost "+cost);
+    public int getcost() 
+      {
+        return cost;
+    }
+    public String HardDiskSpecification() {
+       System.out.println ("Hard Disk Specification is : brand "+ brand + ", size " + size+ ", Cost "+cost);
+        return "Hard Disk Specification is : brand "+ brand + ", size " + size+ ", Cost "+cost;
     }
 }

@@ -1,5 +1,5 @@
 /**
- * Write a description of class HardDisk here.
+ *  Processor class explain the cost, clockspeed and  manufacturer companey.
  * 
  * @author (maryam kiashemshaki) 
  * @version (17.1.27)
@@ -7,27 +7,39 @@
 public class Processor
 {
     private int cost;
-    private int size;
-    private String brand;
+    private int clockspeed;
+    private String manufacturer;
        /**
      * Constructor for objects of class Processor
      */
-    public Processor(int newcost, int newsize, String newbrand )
+    public Processor()
     {
-        brand = newbrand;
+       cost = 0;
+       clockspeed = 0;
+       manufacturer = null;
     }
-    public int setCost() {
-		return cost;
+    public void setcost( int cost) 
+      {
+        this.cost = cost;
     }
-    public int setSize() {
-		return size;
+    public int setclockspeed(int clockspeed) 
+    {
+        this.clockspeed=clockspeed;
+        return clockspeed;
     }
-    public String getBrand() {
-		return brand;
-	}
-
-    public void ProcessorSpecification() {
-    System.out.println("Processor Specification is : brand "+ brand + ", size " + size+ ",Cost "+cost);
+    public String setmanufacturer(String manufacturer) 
+    {
+        this.manufacturer = manufacturer;
+        return manufacturer;
+    }
+      public int getcost() 
+      {
+        return cost;
+    }
+    public String ProcessorSpecification() 
+    {
+    System.out.println ("Processor Specification is : manufacturer "+ manufacturer + ", clockspeed " + clockspeed+ ", Cost "+cost);
+    return "Processor Specification is : manufacturer "+ manufacturer + ", clockspeed " + clockspeed+ ", Cost "+cost ;
     }
 } 
 

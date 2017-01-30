@@ -1,8 +1,10 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Computer()
+comment0.params=processor\ hardDisk\ display
+comment0.target=Computer(Processor,\ HardDisk,\ Display)
 comment0.text=\n\ constructor\ for\ Computer\n\ takes\ no\ parameters\n\ it\ call\ the\ constructor\ of\ each\ of\ the\ fields\n
 comment1.params=
-comment1.target=void\ printComputerSummary()
-comment1.text=\ print\ a\ summary\ of\ the\ Computer\ components\ and\ calculate\ a\ total\ cost\n\ you\ will\ need\ method\ calls\ to\ get\ info\ about\ the\ other\ components\n\ e.g.\ theProcessor.getCost()\n
-numComments=2
+comment1.target=int\ totalPrice()
+comment2.params=
+comment2.target=void\ printComputerSummary()
+comment2.text=\ print\ a\ summary\ of\ the\ Computer\ components\ and\ calculate\ a\ total\ cost\n\ you\ will\ need\ method\ calls\ to\ get\ info\ about\ the\ other\ components\n\ e.g.\ theProcessor.getCost()\n
+numComments=3

@@ -1,13 +1,15 @@
 #BlueJ class context
-comment0.params=newcost\ newsize\ newbrand
-comment0.target=Processor(int,\ int,\ java.lang.String)
+comment0.params=
+comment0.target=Processor()
 comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Processor\n
-comment1.params=
-comment1.target=int\ setCost()
-comment2.params=
-comment2.target=int\ setSize()
-comment3.params=
-comment3.target=java.lang.String\ getBrand()
+comment1.params=cost
+comment1.target=void\ setcost(int)
+comment2.params=clockspeed
+comment2.target=int\ setclockspeed(int)
+comment3.params=manufacturer
+comment3.target=java.lang.String\ setmanufacturer(java.lang.String)
 comment4.params=
-comment4.target=void\ ProcessorSpecification()
-numComments=5
+comment4.target=int\ getcost()
+comment5.params=
+comment5.target=java.lang.String\ ProcessorSpecification()
+numComments=6
