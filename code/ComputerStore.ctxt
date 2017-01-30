@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ComputerStore()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ ComputerStore\n
+comment1.params=newComputer
+comment1.target=boolean\ addComputer(Computer)
+comment2.params=index
+comment2.target=boolean\ removeComputer(int)
+comment3.params=
+comment3.target=void\ printAllComputers()
+comment4.params=
+comment4.target=void\ printTotalValue()
+numComments=5

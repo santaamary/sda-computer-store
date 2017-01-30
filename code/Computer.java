@@ -10,6 +10,7 @@ public class Computer
     private HardDisk theHardDisk;
     private Display theDisplay;
     private int total;
+    private String computerName;
     /**
      * constructor for Computer
      * takes no parameters
@@ -21,7 +22,14 @@ public class Computer
        theHardDisk = hardDisk;
        theDisplay = display;
        this.total= totalPrice();
+       computerName = null;
     }
+   public void setName(String computerName){
+       this.computerName = computerName;
+   }
+   public String getName(){
+       return computerName;
+   }
     // total price of computer = Processor cost + HardDisk cost+ Display cost.
     public int totalPrice()
     {
@@ -34,7 +42,7 @@ public class Computer
     */
       public void printComputerSummary() {
     System.out.println("The computer specification is : Processor model" + theProcessor.ProcessorSpecification() + " ,Hard disk model " + theHardDisk.HardDiskSpecification() +" , Display model " + theDisplay.DisplaySpecification() );
-    System.out.println( " and total cost " + total  );
+    System.out.println(  " total cost " + total  );
     }
     }
 
