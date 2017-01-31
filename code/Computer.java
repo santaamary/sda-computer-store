@@ -35,7 +35,7 @@ public class Computer
     {
     total = theProcessor.getcost() + theHardDisk.getcost() + theDisplay.getcost();
     return total;
-    }
+    }   
     /* print a summary of the Computer components and calculate a total cost
      * you will need method calls to get info about the other components
     * e.g. theProcessor.getCost()
