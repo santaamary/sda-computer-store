@@ -4,41 +4,42 @@
  * @author (maryam kiashemshaki) 
  * @version (17.1.27)
  */
-public class Display
+public class Display extends Component
 {
-    private int cost;
-    private int size;
-    private String brand;
+    //public int cost;
+    public int size;
+   // public String manufacturer;
      /**  
      * Constructor for objects of class Display
      */
     public Display()
     {
-       cost = 0;
+       //cost = 0;
        size = 0;
-       brand = null;
+       //manufacturer = null;
     }
-    public int setCost( int cost) {
-		this.cost = cost;
-        return cost;
+    public void setCost( int cost) {
+		super.cost = cost;
     }
+    
     public int setSize(int size) {
 		this.size = size;
         return size;
     }
-    public String setBrand(String brand) {
-		this.brand = brand;
-        return brand;
+    /*public String setmanufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
+        return manufacturer;
 	}
-    public String getBrand() {
-		return brand;
-	}
+    public String getmanufacturer() {
+		return manufacturer;
+	} */
     public int getcost() 
       {
-        return cost;
+        return super.cost;
     }
+    
     public String DisplaySpecification() {
-    System.out.println("Display Specification is : brand "+ brand + ", size " + size+ ", Cost "+cost);
-    return "Display Specification is : brand "+ brand + ", size " + size+ ", Cost "+cost;
+    System.out.println("Display Specification is : manufacturer "+ manufacturer + ", size " + size+ ", Cost "+cost);
+    return "Display Specification is : manufacturer "+ manufacturer + ", size " + size+ ", Cost "+cost;
     }
 }

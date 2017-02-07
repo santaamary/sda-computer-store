@@ -4,39 +4,40 @@
  * @author (maryam kiashemshaki) 
  * @version (17.1.27)
  */
-public class Processor
+public class Processor extends Component
 {
-    private int cost;
+    //private int cost;
     private int clockspeed;
-    private String manufacturer;
+    //private String manufacturer;
        /**
      * Constructor for objects of class Processor
      */
     public Processor()
     {
-       cost = 0;
+      // cost = 0;
        clockspeed = 0;
-       manufacturer = null;
+       //manufacturer = null;
     }
     public void setcost( int cost) 
       {
-        this.cost = cost;
+        super.cost = cost;
     }
+    
     public int setclockspeed(int clockspeed) 
     {
         this.clockspeed=clockspeed;
         return clockspeed;
     }
-    public String setmanufacturer(String manufacturer) 
+   /* public String setmanufacturer(String manufacturer) 
     {
         this.manufacturer = manufacturer;
         return manufacturer;
-    }
+    }*/
       public int getcost() 
       {
-        return cost;
+        return super.cost;
     }
-    public String ProcessorSpecification() 
+      public String ProcessorSpecification() 
     {
     System.out.println ("Processor Specification is : manufacturer "+ manufacturer + ", clockspeed " + clockspeed+ ", Cost "+cost);
     return "Processor Specification is : manufacturer "+ manufacturer + ", clockspeed " + clockspeed+ ", Cost "+cost ;

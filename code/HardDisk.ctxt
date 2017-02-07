@@ -1,17 +1,14 @@
 #BlueJ class context
 comment0.params=
 comment0.target=HardDisk()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ HardDisk\n
+comment0.text=public\ String\ manufacturer;\n\ \ \ \ \ \ \ /**\n\ Constructor\ for\ objects\ of\ class\ HardDisk\n
 comment1.params=cost
-comment1.target=int\ setCost(int)
+comment1.target=void\ setCost(int)
 comment2.params=size
 comment2.target=int\ setSize(int)
-comment3.params=brand
-comment3.target=java.lang.String\ setbrand(java.lang.String)
+comment3.params=
+comment3.target=int\ getcost()
+comment3.text=public\ String\ setmanufacturer(String\ manufacturer)\ \n\ \ \ \ {\n\t\tthis.manufacturer\ \=\ manufacturer;\n\ \ \ \ \ \ \ \ return\ manufacturer;\n\ \ \ \ }\n\ \ \ \ public\ String\ getmanufacturer()\ \n\ \ \ \ {\n\t\treturn\ manufacturer;\n}
 comment4.params=
-comment4.target=java.lang.String\ getBrand()
-comment5.params=
-comment5.target=int\ getcost()
-comment6.params=
-comment6.target=java.lang.String\ HardDiskSpecification()
-numComments=7
+comment4.target=java.lang.String\ HardDiskSpecification()
+numComments=5

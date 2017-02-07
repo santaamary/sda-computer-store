@@ -9,53 +9,63 @@ import java.util.Iterator;
 public class ComputerStore
 {
     private ArrayList<Computer> computers;
+    private ArrayList<Component> components;
     /**
      * Constructor for objects of class ComputerStore
      */
     public ComputerStore(){
-       computers = new ArrayList<Computer>();
+       computers = new ArrayList<>();
+       components = new ArrayList<>();
     }
 
     public boolean addComputer(Computer newComputer) { 
-    if(computers.add(newComputer)){
-    return true;
-    }
-    else return false;
-    }
-        public boolean removeComputer(int index) { 
-        if (index>0 && index<computers.size()){
-			computers.remove(index);
-			return true;
-		}
+    
+        if(computers.add(newComputer)){
+         return true;
+         }
         else return false;
         
-     }
+    }
+    
+     public boolean removeComputer(int index) { 
+       
+         if (index>0 && index<computers.size()){
+            computers.remove(index);
+            return true;
+        }
+        else return false;
+        
+    }
 
      public void printAllComputers( ) {
-        int index =1;
+        
+         int index =1;
          for(Computer newComputer : computers ){
             System.out.println(index + "." +newComputer.getName());
             index ++;
         }
+        
     }
 
     public void printTotalValue( ) {
-      int allcomputersPrice = 0;
-      for(int i = 0; i < computers.size(); i++){
+      
+       int allcomputersPrice = 0;
+       for(int i = 0; i < computers.size(); i++){
         allcomputersPrice += computers.get(i).totalPrice();
         }
-      System.out.println(  " total cost of all computers is: " + allcomputersPrice  );
+       System.out.println(  " total cost of all computers is: " + allcomputersPrice  );
+      
      }
    
      // This version will use a traditional for loop
     public Computer findMostExpensiveComputerV1( Computer newcomputer ) {
             Computer MostExpensiveComputerV1=computers.get(0);
-		for (int index=1; index<computers.size();index++){
-			if (MostExpensiveComputerV1.totalPrice() < newcomputer.totalPrice()) {
-			MostExpensiveComputerV1= computers.get(index);
-			}
-		}
-		return MostExpensiveComputerV1;
+        for (int index=1; index<computers.size();index++){
+            if (MostExpensiveComputerV1.totalPrice() < newcomputer.totalPrice()) {
+            MostExpensiveComputerV1= computers.get(index);
+            }
+        }
+        return MostExpensiveComputerV1;
     }
     
     // This version will use a traditional while loop
@@ -84,12 +94,39 @@ public class ComputerStore
     // This version will use a for-each loop
     public Computer findMostExpensiveComputerV4(Computer newcomputer ) { 
         Computer MostExpensiveComputerV4= computers.get(0);
-		Iterator<Computer> it= computers.iterator();
-		while(it.hasNext()) {
-			newcomputer=it.next();
-			if (MostExpensiveComputerV4.totalPrice()<newcomputer.totalPrice()) 
+        Iterator<Computer> it= computers.iterator();
+        while(it.hasNext()) {
+            newcomputer=it.next();
+            if (MostExpensiveComputerV4.totalPrice()<newcomputer.totalPrice()) 
             MostExpensiveComputerV4 = newcomputer;
         }
       return MostExpensiveComputerV4;
     }
-}
+        public int totalCostOfComponents( ) {
+          
+      int allcomponentsPrice = 0;
+      for(int i = 0; i < components.size(); i++){
+        allcomponentsPrice += components.get(i).getCost();
+        }
+      System.out.println(  " total cost of all components is: " + allcomponentsPrice  );
+      return allcomponentsPrice;
+    }
+    public void totalCostOfComponents(String component_type) 
+    {
+       int allcomponentsPrice = 0;
+      for(int i = 0; i < components.size(); i++) {
+          
+          if(components.get(i).getClass().getSimpleName().equals(component_type)) {
+              allcomponentsPrice += components.get(i).getCost();
+            }
+
+        }
+      System.out.println(  " total cost of all components is: " + allcomponentsPrice  );
+   
+     }
+     public void addComponent(String name, Component c) {
+         components.add(c);
+        
+        }
+          }
+   

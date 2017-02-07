@@ -4,45 +4,46 @@
  * @author (maryam kiashemshaki) 
  * @version (17.1.27)
  */
-public class HardDisk
+public class HardDisk extends Component
 {
-    private int cost;
-    private int size;
-    private String brand;
+    //public int cost;
+    public int size;
+    /*public String manufacturer;
        /**
      * Constructor for objects of class HardDisk
      */
     public HardDisk()
     {
         size = 0;
-        cost = 0;
-        brand = null;
+        //cost = 0;
+       //manufacturer = null;
     }
-    public int setCost(int cost) 
+    public void setCost(int cost) 
     {
-		this.cost = cost;
-        return cost;
+		super.cost = cost;
     }
+    
     public int setSize(int size) 
     {
 		this.size = size;
         return size;
     }
-    public String setbrand(String brand) 
+    /*public String setmanufacturer(String manufacturer) 
     {
-		this.brand = brand;
-        return brand;
+		this.manufacturer = manufacturer;
+        return manufacturer;
     }
-    public String getBrand() 
+    public String getmanufacturer() 
     {
-		return brand;
-	}
+		return manufacturer;
+	} */
     public int getcost() 
       {
-        return cost;
+        return super.cost;
     }
+    
     public String HardDiskSpecification() {
-       System.out.println ("Hard Disk Specification is : brand "+ brand + ", size " + size+ ", Cost "+cost);
-        return "Hard Disk Specification is : brand "+ brand + ", size " + size+ ", Cost "+cost;
+       System.out.println ("Hard Disk Specification is : manufacturer "+ manufacturer + ", size " + size+ ", Cost "+cost);
+        return "Hard Disk Specification is : manufacturer "+ manufacturer + ", size " + size+ ", Cost "+cost;
     }
 }

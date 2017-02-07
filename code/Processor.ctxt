@@ -6,10 +6,9 @@ comment1.params=cost
 comment1.target=void\ setcost(int)
 comment2.params=clockspeed
 comment2.target=int\ setclockspeed(int)
-comment3.params=manufacturer
-comment3.target=java.lang.String\ setmanufacturer(java.lang.String)
+comment3.params=
+comment3.target=int\ getcost()
+comment3.text=\ public\ String\ setmanufacturer(String\ manufacturer)\ \n\ \ \ \ {\n\ \ \ \ \ \ \ \ this.manufacturer\ \=\ manufacturer;\n\ \ \ \ \ \ \ \ return\ manufacturer;\n}
 comment4.params=
-comment4.target=int\ getcost()
-comment5.params=
-comment5.target=java.lang.String\ ProcessorSpecification()
-numComments=6
+comment4.target=java.lang.String\ ProcessorSpecification()
+numComments=5
